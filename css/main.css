@@ -1,6 +1,72 @@
 body{
   max-height: 100vh;
+  display: grid;
+  grid-template-rows: 50px 700px 500px 500px 600px 600px; 
 }
 
-.bg{
+/* .bg{
+  background-position: top;
+} */
+/* 
+.registrate{
+  background-image: url(assets/images/taxi.jpg);
+}  */
+
+/* img{
+  position: absolute;
+
+} */
+
+.intro{
+  background-color: #f7b617;
+  color: white;
+  padding: 80px;
+  float: right;
+  margin-top: 150px;
+}
+
+h1{
+  font-size: 30px;
+}
+
+#btn{
+  color:black;
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.app{
+  background-color: #f7b617; 
+}
+
+.info{
+  display: flex;
+  padding: 80px;
+}
+
+#info{
+  padding: 30px;
+  color:white;
+  padding-right: 450px;
+  font-size: 20px;
+}
+
+#btn-2{
+  background-color: #f7b617;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+#conductor{
+  position: absolute;
+}
+
+#conduce{
+  color:white;
+  position: absolute;
+  background-color: black;
+  padding: 50px;
+  float: right;
 }
