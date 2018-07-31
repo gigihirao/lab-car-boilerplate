@@ -39,6 +39,7 @@
 }
 
 #tarifa{
+  grid-area: tarifa;
   color: white;
   margin-left: 150px;
   font-size: 20px;
@@ -46,7 +47,8 @@
 }
 
 form{
-  display: flex;
+  display: grid;
+  grid-template-areas: "tarifa" "iframe";
   justify-content: space-around;
 }
 
@@ -60,6 +62,7 @@ form{
 }
 
 iframe{
+  grid-area: iframe;
   width: 100%;
   padding-top: 50%;
   float: left;
@@ -102,8 +105,10 @@ footer{
   margin-top: 40%;
 }
 
-@media screen and (max-width: 576px){
-  body{
-    grid-template-rows: 50px 700px 700px 500px 800px 500px;
-  }
+@media screen and (min-width: 576px){
+  form{
+    display: grid;
+    grid-template-areas: "tarifa"
+                          "iframe";
+  } 
 }
