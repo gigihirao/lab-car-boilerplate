@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
     <title>LabCar</title>
 </head>
-<body>
+<body class="row">
     <header>
             <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
               <div class="container">
@@ -33,20 +33,25 @@
               </div>
             </nav>
     </header>
-    <div class="registrate">
-        <img src="assets/images/taxi.jpg" class="bg" alt="taxi" width="100%">
-        <form class="intro">
-          <h1>Disfuta del viaje<br>Eres dueño de tu tiempo</h1><br>
-          <p><strong>Viaja con </strong><img src="assets/images/logoBlanco.png" alt="logoBlanco"></p><br>
-          <button id="btn" onclick="registrate()">REGÍSTRATE</button><br>
-          <br><p>________O bien________</p><br>
-          <button id="btn" onclick="conviente()">Conviértete en un conducton</button>
-        </form>
+    <div class="back">
+        <div class="row float-sm-right">
+          <div class="col-lg-12">
+            <div class="card border-warning mb-3">
+              <div class="card-body">
+                <h5 class="card-title">Disfuta del viaje<br>Eres dueño de tu tiempo</h5>
+                <p class="card-text"><strong>Viaja con </strong><img src="assets/images/logoBlanco.png" alt="logoBlanco"></p>
+                <button type="button" class="btn btn-light">REGISTRATE</button><br>
+                <br><p>________O bien________</p><br>
+                <button type="button" class="btn btn-light">Conviértete en un conductor</button>
+              </div>  
+            </div>
+          </div>
+        </div>
     </div>
-    <section class="app">
-      <div class="info">
+    <section class="bg-warning w-100">
+      <div class="d-flex flex-row border border-white" style="padding: 70px; margin-top: 22px; margin-right: 230px;">
         <img src="assets/images/iPhone6Plus.png" alt="iPhone6Plus">
-        <div id="info">
+        <div class="d-flex flex-column text-white d-none d-lg-block">
           <h1>Descarga la nueva app</h1><br>
           <p>La versión actualizada da LabCar está llena de nuevas funciones para llegar a donde quieras aún más fácil y rápido.</p>
           <p>Con solo tocar un botón, un auto llega justo a tu ubicatión. Súbete y no te preocupes: tu conductor sabe exactamente a dónde ir.</p>
@@ -54,24 +59,50 @@
       </div>
     </section>
     <div class="conductor">
-      <img src="assets/images/conduce.jpg" alt="conduce" id="conductor" width="100%" >
       <div id="conduce">
         <h1>Conduce cuando quieras</h1>
         <p>LabCar es una opción flexible para alcanzar tus metas financieras.</p>
-        <button id="btn-2" onclick="conductor()">Conviérteten conductor</button>
+        <button type="button" class="btn btn-warning">Conviértete en conductor</button>
       </div>
     </div>
-    <form class="location">
+    <form class="container-fluid bg-warning w-100 pb-6 d-flex flex-row">
       <div id="tarifa">
         <h1>Tarifas</h1><br>
         <p>Consulta las tarifas LabCar aqui</p><br>
-        <textarea id='textInput' placeholder="Ingrese su ponto de partida"></textarea><br>
-        <textarea id='textInput' placeholder="Ingrese su destino"></textarea><br>
-        <button id="btn-3" onclick="rota()"><strong>TRAZAR RUTA!</strong></button>
+        <input type="text" class="form-control" placeholder="Ingrese su ponto de partida" aria-describedby="basic-addon2"><br>
+        <input type="text" class="form-control" placeholder="Ingrese su destino" aria-describedby="basic-addon2"><br>
+        <button type="button" class="btn btn-light"><strong>TRAZAR RUTA!</strong></button>
+      </div>
+      <div id="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d58518.33404952156!2d-46.69197078568732!3d-23.554221384574312!3m2!1i1024!2i768!4f13.1!2m1!1sgoogle+maps!5e0!3m2!1sen!2sbr!4v1533063468601" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
       </div>
     </form>
     <footer>
-        <img src="assets/images/logoBlanco.png" alt="logoBlanco">
+        <img src="assets/images/logoBlanco.png" alt="logoBlanco" id="logoBlanco">
+        <div class="d-flex flex-row" id="container">
+          <ul class="word1">
+            <li class="list-group">Viaja</li>
+            <li class="list-group">Conduce</li>
+            <li class="list-group">Ciudades</li>
+            <li class="list-group">Ciudades</li>
+            <li class="list-group">Entregas</li>
+            <li class="list-group">Como funciona?</li>
+            <li class="list-group">Paises</li>
+            <li class="list-group">Seguridad</li>
+          </ul>
+          <ul class="word2">
+            <li class="list-group">Oportunidades</li>
+            <li class="list-group">Nuestras historia</li>
+            <li class="list-group">API de LabCar</li>
+            <li class="list-group">Eventos</li>
+            <li class="list-group">Desarrolladores</li>
+            <li class="list-group">Servicios</li>
+            <li class="list-group">Laboratoria</li>
+            <li class="list-group">Coders</li>
+          </ul>
+          <img class="logo" src="assets/images/appstore.png" alt="">
+          <img class="logo" src="assets/images/enBadgeWebGeneric.png" alt=""> 
+        </div>
     </footer>
 </body>  
 <script src="main.js"></script>
